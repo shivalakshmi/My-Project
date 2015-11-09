@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/signup_layout_body"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/login_margin"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/signup_edit_name"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/thirty_five"
+            android:layout_marginBottom="@dimen/twenty"
+            android:background="@drawable/button_white_background"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:hint="@string/name"
+            android:padding="@dimen/five"
+            android:singleLine="true"
+            android:textColor="@color/orange" />
+
+        <LinearLayout
+            android:id="@+id/alternative_usernames"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/ten"
+                android:gravity="center"
+                android:text="@string/user_name_already_exists"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/option_text1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/ten"
+                android:gravity="center"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/option_text2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/ten"
+                android:gravity="center"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/option_text3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/ten"
+                android:gravity="center"
+                android:textColor="@color/orange" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/signup_edit_password"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/thirty_five"
+            android:layout_marginBottom="@dimen/twenty"
+            android:background="@drawable/button_white_background"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/orange" />
+
+        <EditText
+            android:id="@+id/signup_edit_confirm_password"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/thirty_five"
+            android:layout_marginBottom="@dimen/twenty"
+            android:background="@drawable/button_white_background"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/orange" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signup_button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/thirty_five"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/login_margin_botton"
+        android:background="@drawable/button_orange_background"
+        android:paddingLeft="@dimen/fifteen"
+        android:paddingRight="@dimen/fifteen"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

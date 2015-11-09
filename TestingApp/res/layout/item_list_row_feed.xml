@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/header_color" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/eight"
+        android:layout_marginRight="@dimen/eight"
+        android:layout_marginTop="@dimen/four"
+        android:background="@drawable/rounded_button_green"
+        android:paddingBottom="@dimen/five" >
+
+        <LinearLayout
+            android:id="@+id/nameandtime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/five"
+                android:layout_weight="1"
+                android:text="@string/name"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/eighteen" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/five"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/time"
+                android:textSize="@dimen/fourteen" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameandtime"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginRight="@dimen/ten"
+            android:layout_marginTop="@dimen/five"
+            android:lineSpacingExtra="@dimen/two"
+            android:text="@string/text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/two_fifty"
+            android:layout_below="@id/text"
+            android:layout_margin="@dimen/seven"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picture" />
+
+        <ImageView
+            android:id="@+id/imagehidden"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/text"
+            android:layout_margin="@dimen/seven"
+            android:src="@drawable/picture"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

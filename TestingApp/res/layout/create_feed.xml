@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout_feed"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/header_color" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:id="@+id/fedd_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="center|top"
+            android:layout_weight="8.5"
+            android:gravity="center|top"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/header_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/fourty_five"
+                android:background="@drawable/textborder"
+                android:layout_marginBottom="@dimen/five" >
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <!--
+                         <ImageView
+                        android:layout_width="32dip"
+                        android:layout_height="32dip"
+                        android:layout_gravity="left|center"
+                        android:layout_marginLeft="10dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/back_i" />
+                    -->
+
+                    <TextView
+                        android:id="@+id/feed_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:layout_margin="@dimen/five"
+                        android:padding="@dimen/five"
+                        android:text="Cancel"
+                        android:hint="Cancel"
+                        android:gravity="center"
+                        android:textSize="@dimen/eighteen"
+                        android:textColor="@color/orange" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Post Status"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/twenty"
+                        android:textStyle="bold" />
+                    <!--
+                    <ImageView
+                        android:layout_width="32dip"
+                        android:layout_height="30dip"
+                        android:layout_gravity="right|center"
+                        android:layout_margin="5dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/check_mark_black" />
+                    -->
+
+                    <TextView
+                        android:id="@+id/feed_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:padding="@dimen/five"
+                        android:text="Post"
+                        android:gravity="center"
+                        android:textSize="@dimen/eighteen"
+                        android:hint="Cancel"
+                        android:textColor="@color/orange" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+
+                <EditText
+                    android:id="@+id/feed_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/hundred"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:ellipsize="end"
+                    android:background="@drawable/backwithborder"
+                    android:gravity="center"
+                    android:hint="What&apos;s on your mind"
+                    android:maxLines="3" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent" >
+
+                <ImageView
+                    android:id="@+id/feed_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/fifteen"
+                    android:layout_marginTop="@dimen/ten"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/five"
+                    android:layout_marginLeft="@dimen/fifteen"
+                    android:layout_marginRight="@dimen/fifteen"
+                    android:gravity="bottom"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/camera"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/thirty_five"
+                        android:background="@drawable/rounded_button"
+                        android:text="Upload From Camera"
+                        android:textColor="@color/orange"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/gallery"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/thirty_five"
+                        android:background="@drawable/rounded_button"
+                        android:text="Upload From Gallery"
+                        android:textColor="@color/orange"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="bottom"
+            android:layout_weight="1.5"
+            android:gravity="bottom|center_vertical" >
+
+            <LinearLayout
+                android:id="@+id/add_images"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:weightSum="2" >
+
+                <ImageView
+                    android:id="@+id/cam_gallery_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.4"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/camera_gallery" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/five"
+                    android:layout_weight="0.6"
+                    android:text="Add photo"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/sixteen"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/thirty_five"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginLeft="@dimen/fifteen"
+                android:layout_marginRight="@dimen/fifteen"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textColor="@color/orange"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

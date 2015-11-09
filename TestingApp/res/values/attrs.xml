@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ImageDownloaderView">
+
+        <!--
+             The sibling to hide after the image is downloaded 
+             and show when the image is being downloaded
+
+
+
+        -->
+
+        <attr name="hideShowSibling" format="reference" />
+        
+        
+        
+    </declare-styleable>
+    <declare-styleable name="WScratchView">
+        <attr name="overlayColor" format="color" />
+        <attr name="overlayDrawable" format="reference" />
+        <attr name="revealSize" format="dimension" />
+        <attr name="antiAlias" format="boolean" />
+        <attr name="scratchable" format="boolean" />
+    </declare-styleable>
+
+    <attr name="fontFace" format="string" />
+    <attr name="fontAlpha" format="integer" />
+
+    <declare-styleable name="RumorMillEditText">
+        <attr name="fontFace1" format="string" />
+        <attr name="fontAlpha" />
+    </declare-styleable>
+    <declare-styleable name="RumorMillTextView">
+        <attr name="fontFace" />
+        <attr name="fontAlpha" />
+    </declare-styleable>
+    <declare-styleable name="RumorMillButton">
+        <attr name="fontFace" />
+        <attr name="fontAlpha" />
+    </declare-styleable>
+    <declare-styleable name="MagicTextView">
+        <attr name="innerShadowColor" format="color" />
+        <attr name="innerShadowRadius" format="float" />
+        <attr name="innerShadowDx" format="float" />
+        <attr name="innerShadowDy" format="float" />
+        <attr name="outerShadowColor" format="color" />
+        <attr name="outerShadowRadius" format="float" />
+        <attr name="outerShadowDx" format="float" />
+        <attr name="outerShadowDy" format="float" />
+        <attr name="typeface" format="string" />
+        <attr name="foreground" format="reference|color" />
+        <attr name="background" format="reference|color" />
+        <attr name="strokeWidth" format="float" />
+        <attr name="strokeMiter" format="float" />
+        <attr name="strokeColor" format="color" />
+        <attr name="strokeJoinStyle">
+            <enum name="miter" value="0" />
+            <enum name="bevel" value="1" />
+            <enum name="round" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="MyTextView">
+        <attr name="first_name" format="string" />
+        <attr name="last_name" format="string" />
+        <attr name="ttf_name" format="string" />
+    </declare-styleable>
+    
+    
+</resources>

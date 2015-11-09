@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_screen_image_size">40dip</dimen>
+    <dimen name="cameraLayoutWidth">50px</dimen>
+    <dimen name="cameraLayoutHeight">80px</dimen>
+    <dimen name="login_margin">30dip</dimen>
+    <dimen name="login_margin_botton">10dip</dimen>
+     <dimen name="margin_bottom">15dip</dimen>
+</resources>

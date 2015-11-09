@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="popup_weight">1.2</string>
+     <string name="header_frag_weight">1</string>
+      <string name="toastbotton_margin">240</string>
+</resources>

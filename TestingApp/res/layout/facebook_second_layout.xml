@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/five"
+            android:gravity="center_horizontal"
+            android:text="Birthdays"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/twenty_five"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/fifteen"
+            android:visibility="visible" />
+
+        <!--
+             <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="15dip"
+            android:src="@drawable/birthday_birthdays" />
+        -->
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>
