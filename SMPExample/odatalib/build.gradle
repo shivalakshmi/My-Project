@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:24.0.0-alpha2'
+    compile files('libs/maflogoncore-1.210.3.jar')
+    compile files('libs/DataVaultLib-3.10.3.jar')
+    compile files('libs/maflogger-1.210.3.jar')
+    compile files('libs/SupportabilityFacade-3.10.3.jar')
+    compile files('libs/ClientLog-3.10.3.jar')
+    compile files('libs/Cache-3.10.3.jar')
+    compile files('libs/Common-3.10.3.jar')
+    compile files('libs/Request-3.10.3.jar')
+    compile files('libs/sap-e2etrace-2.3.5.300.jar')
+    compile files('libs/XscriptParser-3.10.3.jar')
+    compile files('libs/odataoffline.jar')
+    compile files('libs/ODataAPI-3.10.3.jar')
+    compile files('libs/HttpConversation-3.10.3.jar')
+    compile files('libs/HttpConvAuthFlows-3.10.3.jar')
+    compile files('libs/Persistence-3.10.3.jar')
+    compile files('libs/Parser-3.10.3.jar')
+    compile files('libs/E2ETrace-3.10.3.jar')
+    compile files('libs/ODataOnline-3.10.3.jar')
+    compile files('libs/sqlcipher-android-3.1.0.jar')
+    compile files('libs/simple-xml-2.7.1.jar')
+}
